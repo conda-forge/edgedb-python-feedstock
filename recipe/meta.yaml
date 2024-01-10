@@ -1,6 +1,6 @@
 {% set name = "edgedb-python" %}
 {% set pypi_name = "edgedb" %}
-{% set version = "1.7.0" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,14 +8,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/edgedb-{{ version }}.tar.gz
-  sha256: 6d881e9fac1185863e9e664e4e8f4f6b4b1e086fb1e30b9a52fb969252b28257
+  sha256: 93389d7adac5e03ef70c230ec3e8626a9fd697debd48b3bf3b9961efbe236865
 
 build:
   skip: true  # [py<37]
   entry_points:
     - edgedb-py=edgedb.codegen.cli:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
