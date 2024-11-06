@@ -1,6 +1,6 @@
 {% set name = "edgedb-python" %}
 {% set pypi_name = "edgedb" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/edgedb-{{ version }}.tar.gz
-  sha256: 47925ee05332c08d296014b94689cc91620e466e6ad6bb1cb9a4677d123c49f4
+  sha256: 3ddbb841fe80d25ede524535dd52878cf74adae8c920e1f5dd912cddf66fe5f8
 
 build:
   skip: true  # [py<37]
