@@ -274,5 +274,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@carlodri](https://github.com/carlodri/)
 * [@neda-dtu](https://github.com/neda-dtu/)
 
