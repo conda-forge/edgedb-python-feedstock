@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/edgedb-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/edgedb-{{ version }}.tar.gz
   sha256: 3ddbb841fe80d25ede524535dd52878cf74adae8c920e1f5dd912cddf66fe5f8
 
 build:
@@ -15,7 +15,7 @@ build:
   entry_points:
     - edgedb-py=edgedb.codegen.cli:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 3
 
 requirements:
   build:
